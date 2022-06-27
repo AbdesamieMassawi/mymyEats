@@ -15,7 +15,7 @@ export default function Home({ navigation }) {
     const [restaurantData, setRestaurantData] = useState(localRestaurants)
 
     const getRestaurantsFromYelp = () => {
-        const yelpUrl = 'https://api.yelp.com/v3/businesses/search?term=restaurants&location=SanDiego';
+        const yelpUrl = '';
         const apiOptions = {
             headers: {
                 Authorization: `Bearer ${YELP_API_KEY}`,
