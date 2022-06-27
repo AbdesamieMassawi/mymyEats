@@ -6,13 +6,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 
 export default function SearchBar() {
     return (
-        <View   style={{ marginBottom:5, flexDirection: "row" }}>
+        <View   style={{ marginBottom:1, flexDirection: "row" }}>
            <GooglePlacesAutocomplete 
            query={{key:'AIzaSyDR_p4rkGXuf7hXKEyUqfjbHNXWR9NWPRQ'}}
            placeholder='Search' 
            styles= {{
             textInput: {
-                backgroundColor: "#FFB6C1",
+                backgroundColor: "#ffc0cb",
                 borderRadius: 20,
                 fontWeight: "700",
                 color:'black'
@@ -21,7 +21,7 @@ export default function SearchBar() {
               textInputContainer: {
                 marginLeft: 10,
                 marginRight:10,
-                backgroundColor: "#FFB6C1",
+                backgroundColor: "#ffc0cb",
                 borderRadius: 50,
                 flexDirection: "row",
                 alignItems: "center",

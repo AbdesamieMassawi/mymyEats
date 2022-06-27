@@ -38,14 +38,14 @@ export default function DealsRestaurant({navigation}) {
         <Text style={{fontWeight:'bold',color:'#F44336' , fontSize:30, 
         marginLeft:10,
         marginVertical:10
-        }} >Today's Deals!</Text>
+        }} >💥💲Today's Deals💲💥</Text>
       <ScrollView horizontal={true}  >
     
         {localDealRestaurants.map((dealRestaurant, index) => (
-            <TouchableOpacity key={index} onPress={()=> navigation.navigate('RestaurantDetails') } >
+            <TouchableOpacity key={index} onPress={()=> navigation.navigate('IdCode') } >
            <View   style={{ flexDirection:'row', marginLeft:5}}>
 
-                <View>
+                <View style={{margin:1, marginBottom:10}} >
             <DealRestaurantImage dealRestaurantImage={dealRestaurant.image_url} />
             <DealRestaurantInfo  dealRestaurantName={dealRestaurant.name} dealRestaurantPrice={dealRestaurant.price}
             dealRestaurantReviews={dealRestaurant.reviews} dealRestaurantRating={dealRestaurant.rating}
@@ -65,7 +65,7 @@ const DealRestaurantImage = ({dealRestaurantImage})=> (
     <View>
         <Image source={{uri: dealRestaurantImage}} style={{height:170, width:170, borderRadius:20, margin:1}} />
        <View style={{ position: 'absolute', marginLeft: 140, marginTop: 10 }} >
-       <Ionicons name='bookmark' size={20} color='white' />
+       <Ionicons name='bookmark' size={20} color='pink' />
            </View> 
     </View>
 );
@@ -75,22 +75,22 @@ const DealRestaurantInfo = ({dealRestaurantName, dealRestaurantPrice,
      dealRestaurantReviews, dealRestaurantRating}) => (
     <View  style={{marginLeft:5}}>
         
-        <Text style={{fontSize:15, fontWeight:'700', color:'#E53935'}} >{dealRestaurantName}</Text>
-        <Text>{dealRestaurantPrice}</Text>
+        <Text style={{fontSize:15, fontWeight:'700', color:'#ffffff'}} >{dealRestaurantName}</Text>
+        <Text style={{color:'#fff'}} >{dealRestaurantPrice}</Text>
        
         <View style={{flexDirection:'row', justifyContent:'space-between'}} > 
-        <Text>{dealRestaurantReviews}</Text>
+        <Text style={{color:'#fff'}} >{dealRestaurantReviews}</Text>
 
-        <View style={{height:25, width:25, backgroundColor:'#E74C3C', 
+        <View style={{height:25, width:25, backgroundColor:'white', 
         borderRadius:20,
         marginRight:10,
         justifyContent:'center',
         alignItems:'center',
         }}  > 
-        <Text style={{color:'yellow',}} >{dealRestaurantRating}</Text>
+        <Text style={{color:'black'}} >{dealRestaurantRating}</Text>
         </View>
         </View>
-        <Text >25-40 •min </Text>
+        <Text style={{color:'#fff'}} >25-40 •min </Text>
 
     </View>
 );

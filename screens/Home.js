@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, SafeAreaView, ScrollView } from 'react-native'
+import { View, SafeAreaView, ScrollView } from 'react-native'
 import BelowHeaderTab from '../components/BelowHeaderTab';
 import BottomTabs from '../components/BottomTabs';
 import Categories from '../components/Categories';
@@ -11,11 +11,11 @@ import SearchBar from '../components/SearchBar';
 
 const YELP_API_KEY = 'FyNRG5a9nzLZNXF7wj4Ic9Dm5bcmgP5_hu-gbgfN-DeZ4ROspDUwvzSSSmm1LnqFtA-aZb2m1dHFSjEYA9M46nANz3wPZc2H4e088JewnrRRK9nK1RKe62X2XfGAYXYx';
 
-export default function Home({navigation}) {
+export default function Home({ navigation }) {
     const [restaurantData, setRestaurantData] = useState(localRestaurants)
 
     const getRestaurantsFromYelp = () => {
-        const yelpUrl = 'https://api.yelp.com/v3/businesses/search?term=restaurants&location=NewYork';
+        const yelpUrl = 'https://api.yelp.com/v3/businesses/search?term=restaurants&location=SanDiego';
         const apiOptions = {
             headers: {
                 Authorization: `Bearer ${YELP_API_KEY}`,
@@ -31,20 +31,22 @@ export default function Home({navigation}) {
 
 
     return (
-        <SafeAreaView style={{ backgroundColor: '#8A2BE2', flex:1 }} >
+        <SafeAreaView style={{ backgroundColor: '#009387', flex: 1 }} >
             <HeaderTab />
             <SearchBar />
             <ScrollView showsVerticalScrollIndicator={false} >
-            <BelowHeaderTab />
+                <BelowHeaderTab />
                 <Categories />
-                <Restaurants restaurantData={restaurantData} 
-                            navigation={navigation} />
+                <Restaurants restaurantData={restaurantData}
+                    navigation={navigation} />
                 <DealsRestaurant navigation={navigation} />
-             <View stylele={{backgroundColor: '#66FFFF',
-              height:200, width:200}} ></View>
-              
+                <View stylele={{
+                    backgroundColor: '#66FFFF',
+                    height: 200, width: 200
+                }} ></View>
+
             </ScrollView>
-            <BottomTabs/>
+            <BottomTabs />
         </SafeAreaView>
     );
 }

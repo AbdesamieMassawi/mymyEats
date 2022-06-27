@@ -19,7 +19,7 @@ export default function HeaderTab() {
 const RightHeaderButton = () => (
     <View >
         <TouchableOpacity>
-            <Ionicons name='person-circle' size={39} color='#FFB6C1' />
+            <Ionicons name='person-circle' size={39} color='#ffc0cb' />
         </TouchableOpacity>
     </View>
 );
@@ -28,7 +28,7 @@ const RightHeaderButton = () => (
 const LeftHeaderButton = () => (
     <View>
         <TouchableOpacity>
-            <Ionicons name='close' size={39} color='#FFB6C1' />
+            <Ionicons name='close' size={39} color='#ffc0cb' />
         </TouchableOpacity>
     </View>
 );
@@ -51,10 +51,12 @@ const styles = StyleSheet.create({
         color: 'red'
     },
     headerText: {
-        fontSize: 20,
-        fontWeight: '600',
-        color: '#F5F5DC',
-        marginTop: 10
+        marginTop: 1,
+        color: '#fff',
+        fontSize: 26,
+        fontWeight: 'bold', 
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 
 });

@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     menuItemStyle: {
       flexDirection: "row",
       justifyContent: "space-between",
-      margin: 20,
+      margin: 10,
     },
   
     titleStyle: {
@@ -25,43 +25,43 @@ const styles = StyleSheet.create({
 
 
 export const foods = [{
-    title: "Djaj Mhamar🐓",
+    title: "Djaj Mhamar🐓🐓🐓",
     image:
-        "https://www.sunset.com/wp-content/uploads/VERSE-Interior_Credit_-Wonho-Frank-Lee-1200x600.jpg",
+        "https://tasteofmaroc.com/wp-content/uploads/2017/10/chicken-roasted-chermoula-picturepartners-bigstock-Moroccan-chicken-dish-with-che-113288906.jpg",
      description: 'al hrami maymotchi!',
     price: "$20.20",
     
 }, 
 {
-    title: "Lahm Mjamar🐓🐓🐓",
+    title: "Lahm Mjamar🍖🥩🥩🍖",
     image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNBeL0NMs0tgfzGzBuJoEW1OVVij6irIFQg&usqp=CAU",
+        "https://cdn-prod.medicalnewstoday.com/content/images/articles/321/321291/grilled-beef-steaks.jpg",
      description: 'banin w bogoss',
     price: "$30.80",
     
 },
 {
-    title: "Hout Machwi🐓🐓🐓🐓🐓🐓",
+    title: "Bastila😋😋😋",
     image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNBeL0NMs0tgfzGzBuJoEW1OVVij6irIFQg&usqp=CAU",
-     description: 'Poisson tres delicieux!',
-    price: "$66.80",
+        "https://www.moroccoworldnews.com/wp-content/uploads/2015/03/pastilla.jpg",
+     description: 'Il y a deux types de Bastila, Bastila au poulet et Bastila au poisson!',
+    price: "$76.80",
     
 },
 {
-    title: "Hout Machwi🐓🐓🐓🐓🐓🐓",
+    title: "Tagine au Poulet 🥘🐓🐓🥘",
     image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNBeL0NMs0tgfzGzBuJoEW1OVVij6irIFQg&usqp=CAU",
-     description: 'Poisson tres delicieux!',
-    price: "$66.80",
+        "https://images.squarespace-cdn.com/content/v1/5ecd44cdc5773c2dcbc19ca0/1629302538044-9IB6NFHE4IK78E9H5VYX/Taj%2Bpoulet%2Bau%2Bcitron1500.jpg",
+     description: 'emm bnin zwin kay hal l3inin <3 !',
+    price: "$26.80",
     
 },
 {
-    title: "Hout Machwi🐓🐓🐓🐓🐓🐓",
+    title: "Tagine a la vinade 🥘🍖🥩🥘",
     image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNBeL0NMs0tgfzGzBuJoEW1OVVij6irIFQg&usqp=CAU",
-     description: 'Poisson tres delicieux!',
-    price: "$66.80",
+        "https://img-9gag-fun.9cache.com/photo/arMW3yX_460s.jpg",
+     description: 'Tres delicieux!',
+    price: "$36.80",
     
 }, ];
 

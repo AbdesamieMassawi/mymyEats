@@ -28,7 +28,7 @@ const AdressButton = ()=>(
                                       fontSize:22,
                                       color:'black',
 
-                    }} >Adress</Text>
+                    }} >Address</Text>
                         <Ionicons name='chevron-down' size={25} color='black' 
                         style={{marginLeft:3}} />
                         </TouchableOpacity>
@@ -39,7 +39,7 @@ const AdressButton = ()=>(
 
 const DeliveryButton = ()=> (
                 <TouchableOpacity style={styles.deliveryButton} >
-                    <Text style={{fontSize:16, fontWeight:'700'}} >Delivery</Text>
+                    <Text style={{fontSize:16,color:'black', fontWeight:'600'}} >Delivery</Text>
                     <Ionicons name='chevron-down' size={25} color='#0000CC'
                     style={{marginLeft:5}} />
                 </TouchableOpacity>
@@ -62,14 +62,14 @@ const styles = StyleSheet.create({
         alignItems:'center',
         paddingHorizontal: 5,
         paddingLeft:10 ,
-        backgroundColor:'#E6E6FA',
+        backgroundColor:'#ffc0cb',
         borderRadius:10,
 
     },
     deliveryButton:{
         flexDirection:'row',
         alignItems:'center',
-        backgroundColor:'#D5DBDB',
+        backgroundColor:'#ffc0cb',
         borderRadius:15,
         paddingHorizontal:25,
         paddingVertical:7,
